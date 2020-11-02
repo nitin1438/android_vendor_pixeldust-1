@@ -58,10 +58,10 @@ PRODUCT_DEVICE := coral
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
     PRODUCT_NAME="coral" \
-    PRIVATE_BUILD_DESC="coral-user 11 RD1A.200810.020 6792687 release-keys"
+    PRIVATE_BUILD_DESC="coral-user 11 RP1A.201105.002 6869500 release-keys"
 
-BUILD_FINGERPRINT="google/coral/coral:11/RD1A.200810.020/6792687:user/release-keys"
-BUILD_THUMBPRINT="11/RD1A.200810.020/6792687:user/release-keys"
+BUILD_FINGERPRINT="google/coral/coral:11/RP1A.201105.002/6869500:user/release-keys"
+BUILD_THUMBPRINT="11/RP1A.201105.002/6869500:user/release-keys"
 
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.pixeldust.maintainer="fKm" \
