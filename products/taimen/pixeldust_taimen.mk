@@ -47,7 +47,19 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/telephony_vendor.mk)
 $(call inherit-product, device/google/taimen/device.mk)
 $(call inherit-product, vendor/google/taimen/taimen-vendor.mk)
 
-# Inherit from GMS product config
+REMOVE_GAPPS_PACKAGES += \
+	CalculatorGooglePrebuilt \
+	CalendarGooglePrebuilt \
+	Drive \
+	PrebuiltGmail \
+	Chrome \
+	Chrome-Stub \
+	Photos \
+	Maps \	
+	YouTube \
+	YouTubeMusicPrebuilt
+
+# Google Apps
 $(call inherit-product-if-exists, vendor/pixelgapps/pixel-gapps.mk)
 
 PRODUCT_COPY_FILES += \
@@ -57,4 +69,4 @@ PRODUCT_MANUFACTURER := Google
 PRODUCT_BRAND := google
 PRODUCT_NAME := pixeldust_taimen
 PRODUCT_DEVICE := taimen
-PRODUCT_MODEL := Pixel 5a
+PRODUCT_MODEL := Pixel 2 XL
